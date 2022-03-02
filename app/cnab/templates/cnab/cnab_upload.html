@@ -1,9 +1,39 @@
-<div>
-    {{ message }}
+{% load static %}
+<!doctype html>
+
+<html lang="pt">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>CNAB upload</title>
+    <meta name="description" content="Formulário de upload de arquivos cnab.">
+    <meta name="author" content="Deivid">
+
+    <link rel="stylesheet" type="text/css" href="{% static 'cnab/normalize.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'cnab/skeleton.css' %}">
+
+</head>
+
+<body>
+
+
+<div class="section form-upload">
+    <div class="container">
+        <h3 class="section-heading">Formulário de envio</h3>
+        <p class="section-description">Envie seu arquivo txt com padrão CNAB.</p>
+        <form enctype="multipart/form-data" method="post" action="{% url "upload" %}">
+            {% csrf_token %}
+            {{ form }}
+            <input class="button button-primary" type="submit" value="Enviar">
+
+            {% if message|length > 0 %}
+                <pre><code>{{ message }}</code></pre>
+            {% endif %}
+
+        </form>
+    </div>
 </div>
 
-<form enctype="multipart/form-data" method="post" action="{% url "upload" %}">
-    {% csrf_token %}
-    {{ form }}
-    <input type="submit" value="Enviar">
-</form>
+</body>
+</html>
