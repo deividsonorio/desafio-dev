@@ -1,0 +1,92 @@
+[
+  {
+    "model": "cnab.transaction",
+    "pk": 1,
+    "fields": {
+      "type": 1,
+      "description": "Débito",
+      "nature": "Entrada",
+      "sign": "+"
+    }
+  },
+  {
+    "model": "cnab.transaction",
+    "pk": 2,
+    "fields": {
+      "type": 2,
+      "description": "Boleto",
+      "nature": "Saída",
+      "sign": "-"
+    }
+  },
+  {
+    "model": "cnab.transaction",
+    "pk": 3,
+    "fields": {
+      "type": 3,
+      "description": "Financiamento",
+      "nature": "Saída",
+      "sign": "-"
+    }
+  },
+  {
+    "model": "cnab.transaction",
+    "pk": 4,
+    "fields": {
+      "type": 4,
+      "description": "Crédito",
+      "nature": "Entrada",
+      "sign": "+"
+    }
+  },
+  {
+    "model": "cnab.transaction",
+    "pk": 5,
+    "fields": {
+      "type": 5,
+      "description": "Recebimento Empréstimo",
+      "nature": "Entrada",
+      "sign": "+"
+    }
+  },
+  {
+    "model": "cnab.transaction",
+    "pk": 6,
+    "fields": {
+      "type": 6,
+      "description": "Vendas",
+      "nature": "Entrada",
+      "sign": "+"
+    }
+  },
+  {
+    "model": "cnab.transaction",
+    "pk": 7,
+    "fields": {
+      "type": 7,
+      "description": "Recebimento TED",
+      "nature": "Entrada",
+      "sign": "+"
+    }
+  },
+  {
+    "model": "cnab.transaction",
+    "pk": 8,
+    "fields": {
+      "type": 8,
+      "description": "Recebimento DOC",
+      "nature": "Entrada",
+      "sign": "+"
+    }
+  },
+  {
+    "model": "cnab.transaction",
+    "pk": 9,
+    "fields": {
+      "type": 9,
+      "description": "Aluguel",
+      "nature": "Saída",
+      "sign": "-"
+    }
+  }
+]
