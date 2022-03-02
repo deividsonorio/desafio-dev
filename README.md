@@ -21,6 +21,11 @@ As ideias seguintes seriam implementadas caso houvesse possibilidade:
 - [x] Processamento de arquivo CNAB
 - [x] Cadastro no banco de dados (PostgreSQL) de informações
 
+## Tecnolopgias utilizadas
+
+- Python 3.9
+- Django 4
+
 # Dependências
 
 * Docker - [Instalando o Docker](https://docs.docker.com/desktop/)
