@@ -5,9 +5,9 @@
 
 # Desafio programação
 
-Este projeto foi somenmte iniciado. Foi deenvolvida uma primeira ideia devido ao tempo escasso que tive nos dias de prova.
+Este projeto foi somente iniciado. Somente a base foi desenvolvida devido ao tempo escasso no momento da realização da prova.
 
-Foi somente montada uma base. As ideias seguintes seriam implementadas caso houvesse possibilidade:
+As ideias seguintes seriam implementadas caso houvesse possibilidade:
 
 * Upload de arquivo e tratamento em "chunks" para evitar problema com tempo de processamento
 * Criação de task em segundo plano com Celery, para procesamento
@@ -39,6 +39,7 @@ git clone git@github.com:deividsonorio/desafio-dev.git
 ```bash
 docker-compose up -d
 ```
-3. Serão criados os contâiners necesários para aplicação. Ela estará disponível no endereço:
+3. Serão criados os contâiners necesários para aplicação. 
+Um formulário de upload estará dispível em:
 
-<http://localhost:8000/cnab/>
+* <http://localhost:8000/cnab/>
