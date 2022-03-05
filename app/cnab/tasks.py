@@ -23,9 +23,6 @@ def create_random_user_accounts(total):
 @shared_task(name="handle_cnab_file")
 def handle_cnab_file(cnab_file):
 
-    # file_data = cnab_file.read().decode("utf-8")
-    file_data = open(cnab_file)
-
     with open(cnab_file, encoding='utf8') as lines:
         # loop over the lines
         for line in lines:
