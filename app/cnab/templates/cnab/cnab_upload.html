@@ -20,9 +20,17 @@
 
 <div class="section form-upload">
     <div class="container">
+
+        {% if messages %}
+            {% for message in messages %}
+                <p style="color: green">{{ message }}</p>
+            {% endfor %}
+            <hr>
+        {% endif %}
+
         <h3 class="section-heading">Formulário de envio</h3>
         <p class="section-description">Envie seu arquivo txt com padrão CNAB.</p>
-        <form enctype="multipart/form-data" method="post" action="{% url "upload" %}">
+        <form enctype="multipart/form-data" method="post" action="{% url "cnab_upload" %}">
             {% csrf_token %}
             {{ form }}
             <input class="button button-primary" type="submit" value="Enviar">
