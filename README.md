@@ -59,7 +59,7 @@ docker-compose up -d
 
 * <http://localhost:8000/>
 
-![Isso é uma imagem](tela-api.png)
+![Imagem da tela inicial da API](./tela-api.png?raw=true "Imagem da tela inicial da API")
 
 <br>
 
