@@ -15,7 +15,7 @@
 - [x] Endpoint de consulta a informações processadas de arquivos CNAB
 - [x] Endpoint de consulta a transações
 - [x] Autenticação de usuário
-- [x] Testes unitários
+- [x] Testes automatizados
 - [ ] Lista de operações importadas
 - [ ] Atenticação Oauth
 - [ ] Melhor cobertura de testes
@@ -234,3 +234,15 @@ OBS: _arquiv_cnab_ é o nome do campo com o arquivo que a API espera receber
     Cross-Origin-Opener-Policy: same-origin
     
     "Arquivo enviado para processamento. CNAB.txt"
+
+<br>
+<br>
+<hr>
+
+# Teste automatizados
+
+Os testes podem ser realizados através de:
+
+```shell
+docker exec desafio-dev_app_1 ./manage.py test cnab
+```
