@@ -59,6 +59,8 @@ docker-compose up -d
 
 * <http://localhost:8000/>
 
+![Isso é uma imagem](tela-api.png)
+
 <br>
 
 **OBS**: será necessário um usuário e senha para o acesso às URLs de consultas e ao formulário.
