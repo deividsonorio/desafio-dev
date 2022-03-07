@@ -23,9 +23,12 @@ class UploadViewSet(ViewSet):
         return Response("GET - Envie arquivos txt no formato CNAB por POST")
 
     def create(self, request):
-        file_uploaded = request.FILES.get('arquivo_cnab')
-        file_save = handle_uploaded_file(file_uploaded)
-        handle_cnab_file.delay(file_save)
-        response = 'Arquivo enviado para processamento. {}'.format(file_uploaded.name)
+        if request.FILES.get('arquivo_cnab'):
+            file_uploaded = request.FILES.get('arquivo_cnab')
+            file_save = handle_uploaded_file(file_uploaded)
+            handle_cnab_file.delay(file_save)
+            response = 'Arquivo enviado para processamento. {}'.format(file_uploaded.name)
 
-        return Response(response)
+            return Response(response)
+
+        return Response("Envie arquivos txt no formato CNAB por POST")
