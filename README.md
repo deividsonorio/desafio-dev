@@ -25,11 +25,14 @@
 - Python 3.9
 - Django 4
 - Docker
+- Git
 
 # Dependências
 
 * Docker - [Instalando o Docker](https://docs.docker.com/desktop/)
 * Docker compose - [Instalando o Docker Compose](https://docs.docker.com/compose/install/)
+* GIT [Instalando o Git](https://git-scm.com/book/pt-br/v2/Come%C3%A7ando-Instalando-o-Git)
+* Python [Instalando o Python](https://realpython.com/installing-python/)
 
 <br>
 <br>
