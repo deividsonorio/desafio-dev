@@ -24,6 +24,9 @@ services:
       - DB_NAME=devdb
       - DB_USER=devuser
       - DB_PASS=changeme
+      - DJANGO_SU_NAME=desafio
+      - DJANGO_SU_EMAIL=dev@test.com
+      - DJANGO_SU_PASSWORD=dev@pass
     depends_on:
       - db
     links:
