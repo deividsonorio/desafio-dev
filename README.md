@@ -241,9 +241,9 @@ OBS: _arquiv_cnab_ é o nome do campo com o arquivo que a API espera receber
 <br>
 <hr>
 
-# Teste automatizados
+# Testes automatizados
 
-Os testes podem ser realizados através de:
+Os testes podem ser realizados através do comando:
 
 ```shell
 docker exec desafio-dev_app_1 ./manage.py test cnab
