@@ -21,3 +21,6 @@ data/
 #IntelliJ
 .idea/
 *.iml
+
+app/uploads/
+app/debug.log
